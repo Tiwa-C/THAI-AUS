@@ -1,0 +1,89 @@
+.contact {
+    padding-top: 20px;
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        url("../../components/images/background.png");
+}
+
+.mainTitle {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 34px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    color: rgb(40, 11, 17);
+}
+
+.contactWrap {
+    width: 40vw;
+    padding: 0px;
+    display: flex;
+    text-align: center;
+    margin-left: 30%;
+    flex-direction: column;
+}
+
+form {
+    margin: 50px 0;
+}
+
+input {
+    width: 60%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+
+textarea {
+    width: 80%;
+    margin: 20px 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: #59b256;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.message {
+    color: #0e570d;
+    margin-top: -15px;
+}
+
+@media screen and (max-width: 750px) {
+
+    .contactWrap {
+        margin-left: 25%;
+        height:700px;
+    }
+
+    input {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    textarea {
+        width: 200px;
+        margin-left: -2%;
+    }
+
+    .mainTitle {
+        font-size: 24px;
+    }
+
+}

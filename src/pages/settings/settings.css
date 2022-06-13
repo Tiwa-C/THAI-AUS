@@ -1,0 +1,145 @@
+.settings {
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  .settingsWrapper {
+    flex: 9;
+    padding: 40px;
+    padding-left: 70px;
+  }
+  
+  .settingsTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .settingsAllposts {
+    font-size: 20px;
+    color: rgb(83, 28, 28);
+  }
+  
+  .settingsTitleUpdate {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(83, 28, 28);
+  }
+
+  .settingsForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .settingsPP {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .settingsPP > img {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .settingsPPIcon {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: white;
+    background-color: lightcoral;
+    cursor: pointer;
+  }
+  
+  .settingsPPButton:focus {
+    outline-style: none;
+  }
+ 
+  .settingsForm > label {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .settingsPPInput {
+    width: 30%;
+  }
+  
+  .settingsForm > input {
+    color: rgb(66, 65, 65);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .settingsSubmitButton {
+    align-self: center;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .settingsSubmitButton:hover {
+    background-color: rgb(1, 114, 114);
+    font-weight: 800;
+  }
+
+  @media screen and (max-width: 485px) {
+    .settingsWrapper {
+      margin-left: -30px;
+    }
+    
+    .settingsTitleUpdate {
+      font-size: 18px;
+    }
+
+    .settingsAllposts {
+      font-size: 16px;
+    }
+
+    .settingsForm {
+      margin-top: -10px;
+    }
+
+    .settingsPP > img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .settingsForm > label {
+      font-size: 14px;
+    }
+
+    .settingsForm > input {
+      width: 75%;
+      height: 20px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+
+    .settingsSubmitButton {
+      width: 100px;
+    }
+
+  }

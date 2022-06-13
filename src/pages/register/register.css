@@ -1,0 +1,95 @@
+.register {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)),
+    url("../../components/images/background-re.png");
+  background-size: cover;
+  font-family: 'Kanit', sans-serif;
+}
+
+.registerTitle {
+  font-size: 40px;
+}
+
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  font-size: 16px;
+}
+
+.registerForm>label {
+  margin: 10px 0;
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 300px;
+  height: 20px;
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  width: 150px;
+}
+
+.registerButton:hover {
+  font-weight: 600;
+  background-color: rgb(56, 154, 154);
+}
+
+.registerLoginButton {
+  position: absolute;
+  width: 100px;
+  top: 80px;
+  right: 20px;
+  background-color: rgb(62, 119, 61);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.registerLoginButton:hover {
+  font-weight: 600;
+  background-color: rgb(96, 162, 95);
+}
+
+.err {
+  color: red;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 400px) {
+  .registerTitle {
+    font-size: 20px;
+  }
+
+  .registerButton {
+    font-size: 16px;
+    width: 90px;
+  }
+}

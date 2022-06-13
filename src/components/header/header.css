@@ -1,0 +1,100 @@
+.header {
+    font-family: "Varela Round", sans-serif;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  }
+
+  .announcement {
+    background-image: linear-gradient(
+      -225deg,
+      #3d0408 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: 5% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: move 40s infinite;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bolder;
+    word-break: keep-all;
+  } 
+    @keyframes move {
+      0%{
+        transform: translateX(0)
+      }
+      50% {
+        transform: translateX(-20%)
+      }
+      100% {
+        transform: translateX(20%)
+      }
+    }
+  
+  .headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+  }
+  
+  .headerTitleSm {
+    position: absolute;
+    top: 20%;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(120, 3, 17);
+  }
+  
+  .headerTitleLg {
+    position: absolute;
+    top: 30%;
+    font-size: 36px;
+    font-weight: 600;
+    background-color:#000;
+    letter-spacing: 5px;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 100%;
+    background-image: linear-gradient( 68.7deg,  rgb(7, 1, 107) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgb(137, 27, 12) 86.4% );
+  }
+  
+  .headerImg {
+    width: 100%;
+    height: 90vh;
+    padding-top: -20px;
+    object-fit: cover;
+    text-align: center;
+  }
+  
+
+  @media screen and (max-width: 530px) {
+    .headerTitleSm {
+      position: absolute;
+      top: 15%;
+      font-size: 14px;
+    }
+    
+    .headerTitleLg {
+      position: absolute;
+      top: 20%;
+      font-size: 16px;
+    }
+
+    .headerImg {
+      height: 40vh;
+    }
+
+    .announcement {
+      font-size: 10px;
+      height: 20px;
+    }     
+    
+  }

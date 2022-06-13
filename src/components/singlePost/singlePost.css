@@ -1,0 +1,161 @@
+.singlePost {
+  flex: 9;
+  display: flex;
+}
+
+.singlePostWrapper {
+  padding: 20px 30px 20px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePostImg {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  justify-items: center;
+}
+
+.singlePostTitle {
+  text-align: left;
+  color: rgb(67, 66, 66);
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.singlePostTitleInput {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Kanit', sans-serif;
+  border: none;
+  color: #666;
+  border-bottom: 1px solid gray;
+}
+
+.singlePostTitleInput:focus {
+  outline: none;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+
+.singlePostIcon:last-child {
+  color: rgb(156, 29, 7);
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #bc5c43;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.singlePostAuthor {
+  margin-left: 5px;
+}
+
+.singlePostDesc {
+  color: #666;
+  justify-self:first baseline;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  margin-bottom: 50px;
+  text-align:start;
+  word-spacing: 5px;
+  white-space: pre-line;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.singlePostDescInput {
+  border: none;
+  height: 50vh;
+  width: 50vw;
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singlePostDescInput:focus {
+  outline: none;
+}
+
+.singlePostButton {
+  width: 100px;
+  border: none;
+  background-color: #355960;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .singlePostWrapper {
+    width: 80%;
+  }
+
+  .singlePostImg {
+    width: 80%;
+  }
+
+  .singlePostTitle,
+  .singlePostTitleInput {
+    font-size: 14px;
+    margin-left: -20px;
+  }
+
+  .singlePostEdit {
+    font-size: 14px;
+  }
+
+  .singlePostInfo {
+    font-size: 10px;
+    margin-left: -20px;
+  }
+
+  .singlePostDesc,
+  .singlePostDescInput {
+    font-size: 11px;
+    margin-left: -30px;
+    margin-top: -10px;
+    line-height: 1.3em;
+  }
+
+  .singlePostDesc::first-letter {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .singlePostButton {
+    width: 80px;
+    align-self: center;
+  }
+}

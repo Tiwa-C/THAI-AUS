@@ -1,0 +1,67 @@
+.categories {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+    margin: -50px 0px 60px -50px;
+    border-radius: 10px;
+    background-color: rgba(249, 245, 245, 0.979);
+    position: fixed;
+}
+
+.catWrap {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.catItems {
+    flex-direction: column;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: rgb(252, 244, 227);
+    color: rgb(68, 2, 2);
+    text-align: center;
+    align-items: center;
+    border: 1.5px solid rgb(193, 133, 133);
+    box-shadow: 5px 2.5px rgb(252, 202, 210);;
+}
+
+.catItems:hover {
+    background: rgb(251, 233, 233);
+}
+
+.icon {
+    margin: -10px 20px 15px 20px;
+    color: darkred;
+    font-size: 28px !important;
+}
+
+@media screen and (max-width: 670px) {
+    .categories {
+        height: 70px;
+    }
+    
+    .catWrap {
+        margin: -30px 0px -50px 10px;
+    }
+
+    .catItems {
+        width: 35px;
+        height: 35px;
+        font-size: 8px;
+        padding: 5px;
+        margin-right: 8px;
+    }
+
+    .icon {
+        margin-top: 1px;
+        font-size: 16px !important;
+    }
+}

@@ -1,0 +1,145 @@
+.top {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(111, 2, 2);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  font-family: "Kanit", sans-serif;
+}
+
+.topLeft {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topLogo {
+  width: 60px;
+  margin-right: 20px;
+}
+
+h2 {
+  color: rgb(247, 229, 229);
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topList,
+.topListRight {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.topListItem:active,
+.topListItem:hover {
+  color: rgb(168, 165, 165);
+}
+
+.topListItemRight {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.link:hover {
+  color: rgb(168, 165, 165);
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  margin-right: 70%;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 835px) {
+  h2 {
+    display: none;
+  }
+
+  .top {
+    height: 7vh;
+  }
+
+  .topLogo {
+    width: 40px;
+  }
+
+  .topList {
+    flex-direction: column;
+    margin-top: 250px;
+  }
+
+  .topListItem:nth-child(1) {
+    border-top: 1px solid rgba(235, 197, 193, 0.734);
+  }
+
+  .topListItem {
+    width: 100px;
+    height: 18px;
+    border-top: 1px solid rgba(233, 247, 245, 0.555);
+    text-align: center;
+    margin-left: auto;
+    font-size: 12px;
+    padding: 10px 0;
+    background-color: rgb(87, 20, 3);
+  }
+
+  .topListRight {
+    margin-left: -20px;
+  }
+
+  .topListItemRight {
+    font-size: 12px;
+    margin-left: -10px;
+    justify-content: space-between;
+  }
+
+  .topImg {
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+  }
+
+  .btn {
+    display: block;
+  }
+
+}

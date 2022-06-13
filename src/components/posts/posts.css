@@ -1,0 +1,16 @@
+.posts{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 750px) {
+    .posts {
+        margin-top: -30px;
+    }
+}
+
+
